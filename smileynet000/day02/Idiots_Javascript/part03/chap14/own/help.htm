@@ -1,22 +1,20 @@
+<!DOCTYPE HTML>
 <HTML>
 <HEAD>
 <TITLE>Help Displayer</TITLE>
+
 <SCRIPT LANGUAGE="javaScript">
-<!-- Hide javascript
 function help(topic, subtopic)
 {
+ const protocol = "file://"
  const path = "/etc/settings/shelp/"
- const fr = new FileReader(path + topic + "/" + subtopic)
- fileReader.onload = function(event) 
+ const fr = new Blob([protocol + path + topic + "/" + subtopic], 
  {
-  alert(fileReader.result)
- }
- inputElement.onchange = function(event)
- {
-  fileReader.readAsText(event.target.files[0])
- }
+    type: 'text/plain'
+ })
+ const text = await new Repsponse(blob).text()
+ alert(text())
 }
--->
 </SCRIPT>
 </HEAD>
 <BODY BGCOLOR="green">
