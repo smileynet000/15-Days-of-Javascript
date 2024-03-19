@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="javascript">
+<!-- Hide Javascript
+function checkspicy(likes)
+{
+ if (likes == true)
+ {
+  if (document.forms[0].spicytype[2].checked == true)
+   document.forms[0].spicetype[0].click()
+ }
+ else
+ {
+  if (document.forms[0].spicetype[2].checked == false)
+   document.forms[0].spicetype[2].click()
+ }
+}
+-->
+</SCRIPT>
+</HEAD>
+<BODY><FORM>
+<INPUT NAME="spicy" TYPE="checkbox">Do you like spicy foods?
+<P>
+Please select which spicy food is your favorite:
+<INPUT NAME="spicytype" TYPE="radio" VALUE="mexican" ONCLICK="checkspicy(document.forms[0].spciy.checked)">Mexican
+<INPUT NAME="spicytype" TYPE="radio" VALUE="indian" ONCLICK="checkspicy(document.forms[0].spciy.checked)">Indian
+<INPUT NAME="spicytype" TYPE="radio" VALUE="indian" ONCLICK="checkspicy(document.forms[0].spciy.checked)">I said I don't like spicy foods!
+</P>
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+function evalform(address)
+{
+ crucial = address.indexOf("@")
+ // the above uses a method of the string object to locate an at sign in the submitted form
+ if (crucial == -1)
+ {
+  window.alert("Your e-mail address is invalid! You are an abject liar!")
+  return false
+ }
+ else
+  return true
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM onSubmit="evalform(this.email.value)">
+<INPUT NAME="email" TYPE="text" ROWS=1 SIZE="20">Enter your e-mail address<BR>
+<BR>
+<INPUT NAME="submit" TYPE="submit"><BR>
+<BR>
+<INPUT NAME="reset" TYPE="reset">
+</FORM>
+</BODY>
+</HTML>

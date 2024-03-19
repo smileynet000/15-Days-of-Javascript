@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<!-- Hide javascript: Doesn't work!'
+<SCRIPT LANGUAGE="javascript">
+function buymugs(mugs)
+{
+ if (mugs >=10)
+ {
+  documents.forms[0].action = "./invoice1.htm"
+  document.go()
+ }
+ else
+ {
+  documents.forms[0].action = "./invoice2.htm"
+  document.go()
+ }
+}
+</SCRIPT>
+-->
+</HEAD>
+<BODY>
+<FORM METHOD="get">&nbsp;
+<INPUT TYPE="text" NAME="quantity" ROWS=1 COLUMNS=3>Quantity of order<BR>
+<INPUT TYPE="submit" NAME="submit" onSubmit="buymugs(quantity.value)">
+</FORM>
+</BODY>
+</HTML>

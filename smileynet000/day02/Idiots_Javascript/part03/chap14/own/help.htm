@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>Help Displayer</TITLE>
+<SCRIPT LANGUAGE="javaScript">
+<!-- Hide javascript
+function help(topic, subtopic)
+{
+ const path = "/etc/settings/shelp/"
+ const fr = new FileReader(path + topic + "/" + subtopic)
+ fileReader.onload = function(event) 
+ {
+  alert(fileReader.result)
+ }
+ inputElement.onchange = function(event)
+ {
+  fileReader.readAsText(event.target.files[0])
+ }
+}
+-->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="green">
+<FONT COLOR="blue"><H1 ALIGN="center">Help Displayer</H1>
+<FORM>
+Help on which topic? <B>TOPIC</B>&nbsp;<INPUT NAME="subject1" TYPE="text">&nbsp;&nbsp;<B>SUBTOPIC</B>&nbsp;<INPUT NAME="subject2" TYPE="text"><BR>
+<BR>
+<INPUT NAME="submit" TYPE="button" VALUE="Help" onClick="help(this.subject1.value, this.subject2.value)"><BR>
+<BR>
+<INPUT NAME="reset" TYPE="reset">
+</FORM>
+</FONT>
+</BODY>
+</HTML>

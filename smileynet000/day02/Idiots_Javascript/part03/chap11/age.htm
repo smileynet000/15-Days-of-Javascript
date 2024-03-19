@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+function getage()
+{
+ age = window.prompt("How old are you?", "")
+ if ((age < 1) || (age > 120))
+ {
+  window.alert("Why must you turn this page into a house of lies?")
+  getage()
+ }
+ else
+  window.alert("Thank you.")
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM onSubmit="evalform(this.email.value)">
+<INPUT NAME="gemini" TYPE="button" VALUE="Gemini" onClick="getage()"> Click your sign
+</FORM>
+</BODY>
+</HTML>
